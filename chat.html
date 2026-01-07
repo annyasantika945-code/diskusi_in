@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diskusi.in - Grup Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="header">Diskusi.in - Grup Chat</div>
+<div class="chat-container">
+  <div class="chat-header">
+    Diskusi.in - Grup Chat
+  </div>
 
-<div id="chatBox"></div>
+  <div id="chatBox" class="chat-box"></div>
 
-<div class="input-area">
-  <input id="message" placeholder="Ketik pesan...">
-  <button onclick="sendMessage()">Kirim</button>
+  <div class="chat-input">
+    <input id="message" placeholder="Ketik pesan...">
+    <button onclick="sendMessage()">Kirim</button>
+  </div>
 </div>
 
 <script type="module" src="chat.js"></script>
